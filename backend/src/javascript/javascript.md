@@ -22,6 +22,10 @@ npm install mongoose
 npm install mongodb
 ```
 
+### Installation de MongoDB Server Community
+
+Voir le lien ci-contre : https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.5-signed.msi
+
 ## Exécution du code
 
 ### Exécution d'un fichier JavaScript
