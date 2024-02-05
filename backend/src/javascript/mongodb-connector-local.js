@@ -10,8 +10,6 @@ async function connectToLocalDatabase() {
     console.log("Connecté à la base de données locale.");
   } catch (error) {
     console.error("Erreur de connexion à la base de données locale", error);
-  }finally {
-    await client.close();
   }
 }
 
