@@ -5,11 +5,11 @@ async function connectToLocalDatabase() {
   const client = new MongoClient(uri);
 
   try {
-    console.log("Tentative de connexion à la base de données");
+    console.log("Tentative de connexion à la base de données locale...");
     await client.connect();
-    console.log("Connecté à la base de données");
+    console.log("Connecté à la base de données locale.");
   } catch (error) {
-    console.error("Erreur de connexion à la base de données", error);
+    console.error("Erreur de connexion à la base de données locale", error);
   }finally {
     await client.close();
   }
