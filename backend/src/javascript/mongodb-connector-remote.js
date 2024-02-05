@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
-async function connectToDatabase() {
+async function connectToRemoteDatabase() {
   const uri =
     "mongodb+srv://userAdmin1:admin1password@marketplace.ned68jm.mongodb.net/?retryWrites=true&w=majority";
 
@@ -18,12 +18,9 @@ async function connectToDatabase() {
     console.log(
       "Liaison établie. La base de données est prête à être utilisée."
     );
-    await new Promise((resolve) => setTimeout(resolve, 2000));
   } catch (error) {
     console.error("Erreur de connexion à la base de données", error);
-  } finally {
-    await client.close();
   }
 }
 
-connectToDatabase();
+connectToRemoteDatabase();
