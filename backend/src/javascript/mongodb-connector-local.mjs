@@ -1,4 +1,4 @@
-const { MongoClient } = require("mongodb");
+import { MongoClient } from "./constants.mjs";
 
 async function connectToLocalDatabase() {
   const uri = "mongodb://localhost:27017";
@@ -13,4 +13,4 @@ async function connectToLocalDatabase() {
   }
 }
 
-connectToLocalDatabase();
+export { connectToLocalDatabase };
