@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require("mongodb");
+import { MongoClient, ServerApiVersion } from "./constants.mjs";
 
 async function connectToRemoteDatabase() {
   const uri =
@@ -23,4 +23,4 @@ async function connectToRemoteDatabase() {
   }
 }
 
-connectToRemoteDatabase();
+export { connectToRemoteDatabase };
